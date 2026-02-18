@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Krishna ❤️ Gowthami Wedding</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #fff5f7, #fff);
+    text-align: center;
+    color: #444;
+}
+
+/* Popup */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+/* Hero */
+.hero {
+    padding: 60px 20px 20px;
+}
+
+.hero h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 50px;
+    color: #c2185b;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+/* Couple images */
+.couple {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.couple img {
+    width: 170px;
+}
+
+/* Section */
+.section {
+    padding: 40px 20px;
+}
+
+.title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 34px;
+    color: #c2185b;
+    margin-bottom: 20px;
+}
+
+/* Button */
+.btn {
+    background: #c2185b;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background: #a3154b;
+}
+
+footer {
+    background: #ffe4ec;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Mobile */
+@media (max-width:600px) {
+    .hero h1 {
+        font-size: 38px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Background Music -->
+<audio autoplay loop>
+  <source src="https://www2.cs.uic.edu/~i101/SoundFiles/PachelbelCanon.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Welcome Popup -->
+<div class="popup" id="popup">
+    <div class="popup-content">
+        <h2>You're Invited!</h2>
+        <p>Krishna ❤️ Gowthami Wedding</p>
+        <button class="btn" onclick="closePopup()">Open Invitation</button>
+    </div>
+</div>
+
+<!-- Hero Section -->
+<div class="hero">
+    <h1>Krishna & Gowthami</h1>
+    <p>June 15, 2026 | 10:45 AM</p>
+</div>
+
+<!-- Cartoon Bride & Groom -->
+<div class="couple">
+    <!-- Groom -->
+    <img src="https://pngimg.com/uploads/wedding_man/wedding_man_PNG28.png" alt="Groom Krishna">
+
+    <!-- Bride -->
+    <img src="https://pngimg.com/uploads/wedding/wedding_PNG11.png" alt="Bride Gowthami">
+</div>
+
+<!-- Wedding Details -->
+<div class="section">
+    <div class="title">Wedding Details</div>
+    <p><b>Venue:</b> Sri Convention Hall</p>
+    <p><b>City:</b> Hyderabad</p>
+    <p><b>Muhurtham:</b> 10:45 AM</p>
+
+    <!-- Google Maps Button -->
+    <a class="btn"
+       href="https://www.google.com/maps/search/?api=1&query=Sri+Convention+Hall+Hyderabad"
+       target="_blank">
+       View Location
+    </a>
+</div>
+
+<footer>
+    With Love ❤️ Krishna & Gowthami
+</footer>
+
+<script>
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
+}
+</script>
+
+</body>
+</html>
